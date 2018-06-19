@@ -75,8 +75,7 @@ public class ItemServiceImpl implements ItemService {
 	@Override
 	public ItemForm findForm(Long id) {
 		Item entity = itemRepository.findOne(id);
-		ItemForm form = new ItemForm(entity);
-		return form;
+		return new ItemForm(entity);
 	}
 
 	@Override
@@ -105,6 +104,11 @@ public class ItemServiceImpl implements ItemService {
 	@Override
 	public List<Item> findAllByUserId(Long userId) {
 		return itemRepository.findAllByUserId(userId);
+	}
+
+	@Override
+	public Long countAllByBrandId(Long brandId) {
+		return itemRepository.countAllByBrandId(brandId);
 	}
 
 	private ItemDto map(Item item) {

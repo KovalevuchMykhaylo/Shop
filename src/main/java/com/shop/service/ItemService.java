@@ -32,4 +32,6 @@ public interface ItemService {
 	Integer findCount(Long userId);
 
 	List<Item> findAllByUserId(Long userId);
+
+	Long countAllByBrandId(Long brandId);
 }

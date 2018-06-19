@@ -19,5 +19,4 @@ public interface BrandRepository extends JpaRepository<Brand, Long>{
 	@Query("select b.id as id, b.name as name from Brand b")
 	List<NameIdCountProjection> findProjection();
 
-
 }

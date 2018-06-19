@@ -25,5 +25,7 @@ public interface ItemRepository extends JpaRepository<Item, Long>, JpaSpecificat
 
 	@Query("SELECT i FROM Item i JOIN i.shopingCarts sc JOIN sc.users u WHERE u.id=?1")
 	List<Item> findAllByUserId(Long userId);
+
+	Long countAllByBrandId(Long id);
 	
 }
