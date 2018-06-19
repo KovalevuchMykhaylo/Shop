@@ -8,3 +8,4 @@
         <p class="text-center">Try pressing the back button or clicking on this button.</p>
         <p class="text-center"><a class="btn btn-primary" href="/"><i class="fa fa-home"></i> Take Me Home</a></p>
     </div>
+</div>
